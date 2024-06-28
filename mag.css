@@ -1,0 +1,39 @@
+main{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    display: flex;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    gap: 30px;
+    align-items: baseline;
+}
+
+.card-img-top{
+    height: 220px;
+    width: auto;
+}
+
+#div{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-body{
+    text-align: center;
+    align-items: center;
+    
+}
+
+.btn{
+    box-shadow: inset;
+    margin-top: 20px;
+    justify-self: center;
+}
+

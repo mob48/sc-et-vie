@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mag.css" />
+    <title>SCIENCE&VIE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <section
+      style="
+        background: url(https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/03/shutterstock_2076406630.jpg)
+          no-repeat center center;
+        background-size: cover;
+      "
+    >
+      <div>
+        <nav
+          class="navbar navbar-dark navbar-expand-lg bg-transparent py-5 py-lg-3 px-5"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="img-fluid" src="./sc_et_vie.png" alt="" />
+            </a>
+            <div class="collapse navbar-collapse me-5 justify-content-end">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item p-5">
+                  <a class="nav-link d-inline-block p-0" href="#">
+                    <h5 class="fs-17 fw-medium text-white mb-0">TV</h5>
+                  </a>
+                </li>
+                <li class="nav-item p-5">
+                  <a class="nav-link d-inline-block p-0" href="#">
+                    <h5 class="fs-17 fw-medium text-white mb-0">espace</h5>
+                  </a>
+                </li>
+                <li class="nav-item p-5">
+                  <a class="nav-link d-inline-block p-0" href="#">
+                    <h5 class="fs-17 fw-medium text-white mb-0">santé</h5>
+                  </a>
+                </li>
+                <li class="nav-item p-5">
+                  <a class="nav-link d-inline-block p-0" href="#">
+                    <h5 class="fs-17 fw-medium text-white mb-0">
+                      environnement
+                    </h5>
+                  </a>
+                </li>
+                <li class="nav-item p-5 dropdown" >
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    more
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">innovation</a></li>
+                    <li><a class="dropdown-item" href="#">mobilité</a></li>
+                    <li><a class="dropdown-item" href="#"> archéologie</a></li>
+                    <li><a class="dropdown-item" href="#"> junior</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        SCIENCES FONDAMENTALES</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="d-none d-lg-block">
+              <div class="border border-2 border-light rounded-3">
+                <button
+                  class="btn btn-transparent px-4 py-3 rounded-1"
+                  type="button"
+                  data-bs-toggle="modal" 
+                  data-bs-target="#exampleModal"
+                >
+                  <a><span class="fs-17 fw-medium text-white mb-0"
+                    >abonnez-vous</span
+                  ></a>
+                </button>
+              </div>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" >
+                  <div class="modal-content" style="background-color: rgb(212, 207, 200);">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">s'inscrire</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div style="gap: 10px; margin-bottom: 50px;">
+                        <input type="email" placeholder="e-mail" style="margin-bottom: 20px;" class="mail"><br>
+                        <input type="text" placeholder="password" class="pass"><br>
+                      </div>
+                      <a href="https://connect.science-et-vie.com/password-forgotten.php"><h6 style="font-size: 15px;">mot de passe oublié</h6></a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">sortir</button>
+                      <button type="button" class="btn btn-primary" id="connect">connecter</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-lg-none">
+              <button class="btn navbar-burger p-0">
+                <svg
+                  class="text-dark-light"
+                  width="51"
+                  height="51"
+                  viewbox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="56"
+                    height="56"
+                    rx="28"
+                    fill="currentColor"
+                  ></rect>
+                  <path
+                    d="M37 32H19M37 24H19"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="d-none navbar-menu position-fixed top-0 start-0 bottom-0 w-75 mw-xs"
+          style="z-index: 9999"
+        >
+          <div
+            class="navbar-close navbar-backdrop position-fixed top-0 start-0 end-0 bottom-0 bg-dark"
+            style="opacity: 75%"
+          ></div>
+        </div>
+      </div>
+      <div class="overflow-hidden pt-32 pb-40">
+        <div class="container">
+          <div class="row g-16">
+            <div class="col-12 col-md-5 col-xl-6">
+              <h1
+                class="fs-6 fw-medium text-secondary-light"
+                style="
+                  color: white;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+                "
+              >
+                espace
+              </h1>
+              <h1
+                class="fs-17 text-white"
+                style="font-family: Georgia, 'Times New Roman', Times, serif"
+              >
+                Que se passerait-il si la rotation de la Terre s'arrêtait ?
+              </h1>
+              <div class="row mb-20 g-5">
+                <div class="col-auto" style="color: white">
+                  <h5>
+                    S'il devait avoir lieu, l'arrêt de la rotation de la Terre
+                    aurait des effets catastrophiques. Un scénario apocalyptique
+                    dévoilé par Joe Levy, expert en géosciences, qui explique
+                    que la moitié du monde plongerait dans l'obscurité et les
+                    conséquences seraient fatales pour toute forme de vie.
+                  </h5>
+                </div>
+              </div>
+
+              <div class="mw-md-md">
+                <div
+                  class="row g-6"
+                  style="margin-top: 60px; margin-bottom: 70px"
+                >
+                  <div class="col-auto">
+                    <img
+                      class="img-fluid"
+                      style="width: 60px; height: 60px"
+                      src="https://www.colgate.edu/sites/default/files/styles/optimized/public/profile/joe-levy-500x660_0.jpg?itok=C8HLTi62"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col">
+                    <p class="text-light-dark mb-3" style="color: grey">
+                      “ Un arrêt brusque entraînerait des projections à grande
+                      vitesse, un raz de marée dévastateur et la destruction de
+                      bâtiments. Un ralentissement progressif de la rotation
+                      éviterait les catastrophes immédiates, mais les
+                      conséquences finales seraient similaires.”
+                    </p>
+                    <h5 class="fs-22 fw-medium text-white mb-0">
+                      Joe Levy, professeur à l'Université Colgate
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <main style="text-align: center">
+        <div>
+          <h2 style="text-align: center; margin-bottom: 20px">
+            TOUTE L'INFO SCIENTIFIQUE
+          </h2>
+          <div id="div">
+            <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/capture-decran-2024-06-27-120445.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>ciel et espace</h6>
+                <h3>
+                  A 69 ans, le plus âgé des astronautes va partir six mois dans
+                  l'espace
+                </h3>
+                <p class="card-text">
+                  Membre de la Nasa depuis 1983, Don Pettit va s’envoler pour la
+                  station spatiale internationale en septembre
+                  prochain.Soixante, 62, 64 ans…
+                </p>
+              </div>
+            </div>
+
+              <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/shutterstock_2458747167.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>CORPS ET SANTÉ</h6>
+                <h3>Vrai ou Faux : la bière est une boisson hydratante</h3>
+                <p class="card-text">
+                  Hydratante ou non, la bière et l'alcool en général, c’est
+                  toujours à consommer avec modération.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/shutterstock_2398798211.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>rechauffement climatique</h6>
+                <h3>
+                  Victoire pour des jeunes militants pour le climat à Hawaï :
+                  comment des adolescents ont forcé un état à agir
+                </h3>
+                <p class="card-text">
+                  En juin 2022, treize jeunes militants pour le climat ont
+                  intenté un procès contre le département des transports d'Hawaï
+                </p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/5292_285603_k2_k1_685858.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>soigner</h6>
+                <h3>
+                  Est-il possible de guérir l'addiction en réalité virtuelle ?
+                </h3>
+                <p class="card-text">
+                  Anxiété, euphorie, manque… Les émotions sont un élément clé
+                  des processus addictifs. Pour aider les patients à les
+                  surmonter, des médecins ont recours à la VR, la réalité
+                  virtuelle.
+                </p>
+              </div>
+            </div>
+        
+            
+            <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/shutterstock_2002479905.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>animaux</h6>
+                <h3>Miracle biologique : Ronaldo, un boa arc-en-ciel...</h3>
+                <p class="card-text">
+                  Un boa “mâle” qui vivait seul dans son vivarium a donné
+                  naissance à 14 bébés.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/shutterstock_1839772900.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>archéo</h6>
+                <h3>
+                  Enigme historique : comment une guerrière médiévale du XIIe
+                  siècle s'est-elle..
+                </h3>
+                <p class="card-text">
+                  Jeanne d’Arc aurait de la concurrence. Une femme, aurait été
+                  enterrée aux côtés de 23 moines guerriers,
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2023/09/istock-1388093679-750x410.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>espace et ciel</h6>
+                <h3>Le mystère de la force forte : qu'est-ce que c'est ?</h3>
+                <p class="card-text">
+                  Découvrez le rôle crucial de la force forte, cette force
+                  dominante parmi les quatre forces fondamentales qui orchestre
+                  l'union des particules élémentaires.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/shutterstock_2163033541.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>corps et santé</h6>
+                <h3>
+                  Dépression, anxiété : comment le Covid pèse t-il encore sur
+                  nos émotions ?
+                </h3>
+                <p class="card-text">
+                  Dans un cas sur quatre, des troubles dépressifs et anxieux
+                  sont associés à d'autres symptômes, peut-être liés à un
+                  dérèglement du système nerveux qui gère nos émotions.
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 22rem">
+              <img
+                src="https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/shutterstock_2403710789.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h6>junior</h6>
+                <h3>Inoxtag et la ruée vers l'Everest</h3>
+                <p class="card-text">
+                  À l'image du youtubeur Inoxtag, de nombreux alpinistes
+                  amateurs n'hésitent plus à se lancer à l'assaut de l'Everest.
+                  Un défi de taille car, même si le toit du monde est de plus en
+                  plus fréquenté, il n'est pas à la portée de tous.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-lg">
+            <a href="https://www.science-et-vie.com/sciences-fondamentales"
+              >voir plus</a
+            >
+          </button>
+        </div>
+      </main>
+    </section>
+    <section
+      style="
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 50px;
+        margin-bottom: 90px;
+        background-color: rgb(250, 248, 248);
+        text-align: center;
+      "
+    >
+      <h1 style="text-align: center; padding-top: 20px">videos</h1>
+      <div
+        style="
+          margin-right: 20px;
+          margin-left: 50px;
+          margin-top: 30px;
+          display: flex;
+          gap: 10px;
+        "
+      >
+        <iframe
+          width="600"
+          height="350"
+          src="https://www.youtube.com/embed/a2tpWRAW5gg?si=Em2u9XhaA0MnaIk3"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div>
+          <div
+            style="
+              grid-row-end: auto;
+              display: flex;
+              gap: 10px;
+              padding-top: 10px;
+            "
+          >
+            <iframe
+              width="170"
+              height="100"
+              src="https://www.youtube.com/embed/6hLFQHryL5I?si=uPsNINYdm9zZKjgQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <h5 style="width: 220px">
+              TOP 3 : Voici les robots les plus réalistes à ce jour !
+            </h5>
+            <br />
+          </div>
+          <div
+            style="
+              grid-row-end: auto;
+              display: flex;
+              gap: 10px;
+              padding-top: 10px;
+            "
+          >
+            <iframe
+              width="170"
+              height="100"
+              src="https://www.youtube.com/embed/qi1DqOFPmJw?si=1PCI7OI15l1MRv8d"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <h5 style="width: 220px">
+              Le supervolcan le plus dangereux d'Europe pourrait être sur le
+              point d'exploser !
+            </h5>
+            <br />
+          </div>
+          <div
+            style="
+              grid-row-end: auto;
+              display: flex;
+              gap: 10px;
+              padding-top: 10px;
+            "
+          >
+            <iframe
+              width="170"
+              height="100"
+              src="https://www.youtube.com/embed/2qzsQJyRKFc?si=2B9gdbcaR3LIlknD"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <h5>La nature fait des MATHS</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-lg"
+        style="padding-bottom: 30px; padding-top: 20px"
+      >
+        <a href="https://www.science-et-vie.com/videos-podcasts">voir plus</a>
+      </button>
+    </section>
+
+    <section class="row">
+      <div style="display: flex">
+        <div class="col-2" style="padding-left: 100px; text-align: center">
+          <h1 style="margin-top: 20px; margin-left: 100px; font-size: 130px; color: black;">LES PLUS LUS</h1>
+        </div>
+        <div style="margin-left: 50px;">
+          <div
+            class="col-12 col-lg-6 mb-6 mb-lg-0"
+            style="margin-left: 300px; margin-top: 8px; margin-bottom: 5px"
+           >
+            <div class="d-flex justify-content-center justify-content-lg-end">
+              <div
+                class="d-inline-block w-100 p-3 bg-white"
+                style="
+                  max-width: 245px;
+                  border-radius: 15px;
+                  background: url(https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/shutterstock_2383287547.jpg);
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="row g-3">
+                  <div class="col">
+                    <h10 class="fs-22 fw-medium mb-0" style="color: rgb(28, 6, 80);"
+                      >Marcher ou courir : quelle activité brûle le plus de
+                      calories pour la même distance ?</h10
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-6"
+            style="margin-left: 450px; margin-top: 8px"
+           >
+            <div
+              class="d-flex justify-content-center justify-content-lg-start"
+              style="height: 120px"
+            >
+              <div
+                class="d-inline-block w-100 p-3 bg-white"
+                style="
+                  max-width: 245px;
+                  border-radius: 15px;
+                  background: url(https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/06/shutterstock_2431635551.jpg);
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="row g-3">
+                  <div class="col">
+                    <h10 class="fs-22 fw-medium mb-0" style="color: whitesmoke;">
+                      IA vs IA : face aux deepfakes, un algorithme serait notre
+                      meilleur atout</h10
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="row mb-6 me-xl-28 justify-content-center"
+            style="margin-top: 5px"
+           >
+            <div class="col-12 col-lg-6 mb-6 mb-lg-0" style="margin-left: 200px;">
+              <div
+                class="d-flex justify-content-center justify-content-lg-end"
+                style="height: 120px"
+              >
+                <div
+                  class="d-inline-block w-100 p-3 bg-white"
+                  style="
+                    max-width: 245px;
+                    border-radius: 15px;
+                    background: url(https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/03/shutterstock_1097222507.jpg);
+                    background-size: cover;
+                    background-position: center;
+                  "
+                 >
+                  <div class="row g-3">
+                    <div class="col">
+                      <h6 class="fs-22 fw-medium mb-0" style="color: rgb(28, 6, 80);">
+                        Vous voulez manger de la viande ? Mangez du python !
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-6"
+              style="margin-left: 450px; margin-top: 8px"
+            >
+              <div
+                class="d-flex justify-content-center justify-content-lg-start"
+                style="height: 120px"
+               >
+                <div
+                  class="d-inline-block w-100 p-3 bg-white"
+                  style="
+                    max-width: 245px;
+                    border-radius: 15px;
+                    background: url(https://www.science-et-vie.com/wp-content/uploads/scienceetvie/2024/05/4931_262131_k2_k1_626854.jpg);
+                    background-size: cover;
+                    background-position: center;"
+                  
+                 >
+                  <div class="row g-3">
+                    <div class="col">
+                      <h10 class="fs-22 fw-medium mb-0" style="color: white;"
+                        >Le problème à trois corps" : décryptage scientifique
+                        de la série
+                      </h10>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="padding-top: 150px;">
+      <div style="background-color: black;  display: flex; justify-content: center; gap: 30px;">
+    <a href="https://www.science-et-vie.com/nous-contacter"><h3 style="color: white;">nous contactez</h3></a>
+     <a href="https://www.serviceabomag.fr/"><h3 style="color: white;">service client </h3></a>
+      </div>
+      <div style="display: flex; justify-content: center; flex-wrap: wrap; margin-left: 200px; margin-right: 200px; gap: 10px; margin-top: 15px; margin-bottom: 55px;">
+     <a href="https://www.science-et-vie.com/auteurs"><h6 style="color: black;">LA REDACTION</h6></a>
+     <a href="https://abonnement.science-et-vie.com/landing-page/5oCqXcLlK0/2255"><h6 style="color: black;">JE M'ABONNE À SCIENCE ET VIE</h6></a>
+     <a href="https://www.kiosquemag.com/titres/science-vie-junior/offres?utm_source=science-et-vie&utm_medium=edito-linking&utm_campaign=footer-sv-lien-abonnement"><h6 style="color: black;">JE M'ABONNE À SCIENCE & VIE JUNIOR</h6></a>
+     <a href="https://www.kiosquemag.com/?utm_source=science-et-vie&utm_medium=edito-linking&utm_campaign=footer-lien-km-boutique-officielle"><h6 style="color: black;">KIOSQUEMAG : LA BOUTIQUE OFFICIELLE</h6></a>
+     <a href="https://www.science-et-vie.com/enquetes-lecteurs"><h6 style="color: black;">ENQUÊTES LECTEURS</h6></a>
+     <a href="https://www.science-et-vie.com/simulateur-climatique"><h6 style="color: black;">SIMULATEUR CLIMATIQUE</h6></a>
+     <a href="https://www.science-et-vie.com/mentions-legales"><h6 style="color: black;">MENTIONS LÉGALES</h6></a>
+      </div>
+      <h6 style="justify-content: center; margin-left: 500px; margin-bottom: 80px;" >© Science-et-vie.com - Tous droits réservés</h6>
+    </footer>
+    <script src="mag.js"></script>
+  </body>
+</html>
